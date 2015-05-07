@@ -1,0 +1,38 @@
+#!/bin/sh
+
+if [ "$1" = "" ]; then
+    echo ""
+    echo "Please give me a database name to back up."
+    echo ""
+    exit 1
+fi
+
+db=$1
+
+d=`date '+%Y%m%d_%H%M%S_%Z'`
+
+if [ "$2" = "" ]; then
+    if [ ! -d $db"_"$d ]; then
+        mkdir $db"_"$d
+        if [ $? -ne 0 ]; then
+            echo ""
+            echo "ERROR could not create directory "$db"_"$d
+            echo ""
+            exit 1
+        fi
+        echo "created dir: "$db"_"$d
+    else
+        echo "already dir: "$db"_"$d
+    fi
+    dir=$db"_"$d
+else
+    echo "using dir: $2"
+    dir=$2
+fi
+
+echo "show tables;" | \
+    mysql -u ray --skip-column-names $db | \
+    awk '{print "echo \"    "$1"....\""; print "mysqldump -u ray --skip-lock-tables '$db' "$1" | gzip - > '$dir'/"$1".sql.gz"}' | \
+    /bin/sh
+
+exit 0

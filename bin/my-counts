@@ -1,0 +1,29 @@
+#!/bin/sh
+
+if [ "$1" = "" ]; then
+    echo ""
+    echo "usage: my-count <database> [ -grep <word> ]"
+    echo ""
+    exit
+fi
+
+if [ "$2" = "-grep" ]; then
+    word=$3
+fi
+
+echo ""
+
+echo "table\tcount"
+
+echo "show tables;" | mysql -u ray --skip-column-names --force $1 | grep -vi eo_pk_table > /tmp/count_$$_01.txt
+
+if [ "$word" != "" ]; then
+    cat /tmp/count_$$_01.txt | grep $word > /tmp/count_$$_02.txt
+else
+    cp /tmp/count_$$_01.txt /tmp/count_$$_02.txt
+fi
+
+cat /tmp/count_$$_02.txt | awk '{print "select '\''"$0"'\'', count(*) from "$0";"}' | mysql -u ray --skip-column-names --force $1
+
+echo ""
+

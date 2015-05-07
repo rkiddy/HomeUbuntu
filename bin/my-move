@@ -1,0 +1,27 @@
+#!/bin/sh
+
+if [ "$1" = "" ]; then
+    echo ""
+    echo "usage: my-move <old-database> <new-database>"
+    echo ""
+    exit
+fi
+
+echo ""
+
+echo "show databases;" | mysql -u ray --skip-column-names | grep '^'$2'$' > /tmp/move_$$_01.txt
+
+if [ -s /tmp/move_$$_01.txt ]; then
+    echo ""
+    echo "There was some problem accessing the database or database with name '$2' already exists."
+    echo ""
+    exit 1
+fi
+
+echo "show tables;" | mysql -u ray --skip-column-names $1 | \
+    awk 'BEGIN{print "create database '$2';"} \
+              {print "rename table '$1'."$0" to '$2'."$0";"}
+           END{print "drop database '$1';"}' | \
+    mysql -u ray -vvv
+
+exit

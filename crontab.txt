@@ -1,0 +1,30 @@
+
+#
+#    field          allowed values
+#    -----          --------------
+#    minute         0-59
+#    hour           0-23
+#    day of month   1-31
+#    month          1-12 (or names, see below)
+#    day of week    0-7 (0 or 7 is Sun, or use names)
+#
+
+37 19 * * * /home/ray/Projects/ASIAS_Capture/capture
+37 21 * * * /home/ray/Projects/ASIAS_Capture/capture
+37 23 * * * /home/ray/Projects/ASIAS_Capture/capture
+
+#51 10 * * * /home/ray/bin/backup.sh
+#51 15 * * * /home/ray/bin/backup.sh
+#51 22 * * * /home/ray/bin/backup.sh
+#
+#23 02 * * * /home/ray/bin/fetchAppLogs.sh
+#23 11 * * * /home/ray/bin/fetchAppLogs.sh
+#23 14 * * * /home/ray/bin/fetchAppLogs.sh
+#23 17 * * * /home/ray/bin/fetchAppLogs.sh
+
+11  * * * * /home/ray/bin/ffBack.pl
+23  * * * * /home/ray/bin/ffBack.pl
+37  * * * * /home/ray/bin/ffBack.pl
+43  * * * * /home/ray/bin/ffBack.pl
+57  * * * * /home/ray/bin/ffBack.pl
+
