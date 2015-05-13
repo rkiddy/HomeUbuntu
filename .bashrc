@@ -142,6 +142,10 @@ if [ -d "/usr/local/go/bin" ]; then
     PATH="$PATH:/usr/local/go/bin"
 fi
 
+if [ -d "/home/ray/.local/bin" ]; then
+    PATH="$PATH:/home/ray/.local/bin"
+fi
+
 alias ecp='/opt/eclipse_4.4.RCP.SR1/eclipse'
 
 alias sshfarm='ssh -i /home/ray/Projects/AWS/WebObjects.pem ec2-user@aws.jimijon.com'
