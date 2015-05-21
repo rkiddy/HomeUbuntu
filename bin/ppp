@@ -1,0 +1,18 @@
+#!/bin/sh
+
+if [ "$1" = "" ]; then
+    echo ""
+    echo "Give me a file name (assumed JSON) and I will pretty-print it"
+    echo ""
+    exit
+fi
+
+if [ "$1" != "-" ] && [ ! -f "$1" ]; then
+    echo ""
+    echo "Give me a file name (assumed JSON) and I will pretty-print it"
+    echo ""
+    exit
+fi
+
+cat $1 | python -m json.tool
+

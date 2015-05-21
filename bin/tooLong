@@ -1,0 +1,9 @@
+#!/bin/sh
+
+# pipe a python source file into this and you will see where lines are too long.
+
+awk '{n=NR;
+      while (length(n) < 5) n="0"n;
+      print n":",$0;
+      if (length($0) >= 80) print "00000: ERROR: 8901234567890123456789012345678901234567890123456789012345678901234567890"}' $1
+
