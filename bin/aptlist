@@ -1,0 +1,4 @@
+#!/bin/sh
+
+dpkg -l | grep ^ii | sed 's_  _\t_g' | cut -f 2
+
