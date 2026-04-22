@@ -1,0 +1,73 @@
+# List generated with "aptitude search '~i!~M'", minus some packages I do not think I did manually.
+#
+# I am not sure I can explain all of these, but I believe that they are as intended.
+#
+i  antiword - Converts MS Word files to text, PS, PDF and XML
+i  aptitude - terminal-based package manager
+i  bash-completion - programmable completion for the bash shell
+i  beep - advanced PC-speaker beeper
+i  blender - Very fast and versatile 3D modeller/renderer
+i  bsdutils - basic utilities from 4.4BSD-Lite
+i  ca-certificates - Common CA certificates
+i  certbot - automatically configure HTTPS using Let's Encrypt
+i  chrome-gnome-shell - GNOME Shell integration for browsers - transitional package
+i  chromium-chromedriver - Transitional package - chromium-chromedriver -> chromium snap
+i  cmake - cross-platform, open-source make system
+i  curl - command line tool for transferring data with URL syntax
+i  default-jdk - Standard Java or Java compatible Development Kit
+i  default-jre - Standard Java or Java compatible Runtime
+i  diffutils - File comparison utilities
+i  efibootmgr - Interact with the EFI Boot Manager
+i  emacs - GNU Emacs editor (metapackage)
+i  ffmpeg - Tools for transcoding, streaming and playing of multimedia files
+i  file - Recognize the type of data in a file using "magic" numbers
+i  findutils - utilities for finding files--find, xargs
+i  flatpak - Application deployment framework for desktop apps
+i  gedit - popular text editor for the GNOME desktop environment
+i  gh - GitHub CLI, GitHub’s official command line tool
+i  gimp - GNU Image Manipulation Program
+i  git - fast, scalable, distributed revision control system
+i  gnome-terminal - GNOME terminal emulator application
+i  gnome-tweaks - tool to adjust advanced configuration settings for GNOME
+i  google-chrome-stable - The web browser from Google
+i  grep - GNU grep, egrep and fgrep
+i  gzip - GNU compression utilities
+i  hexyl - Command-line hex viewer with colored output
+i  hostname - utility to set/show the host name or domain name
+i  isort - utility for sorting Python imports
+i  kdenlive - non-linear video editor
+i  lynx - classic non-graphical (text-mode) web browser
+i  m17n-db - multilingual text processing library - database
+i  make - utility for directing compilation
+i  maven - Java software project management and comprehension tool
+i  mercurial - easy-to-use, scalable distributed version control system
+i  minecraft-launcher - Official Minecraft Launcher
+i  mousetweaks - mouse accessibility enhancements for the GNOME desktop
+i  mysql-server - MySQL database server (metapackage depending on the latest version)
+i  ncal - display a calendar and the date of Easter
+i  ncurses-base - basic terminal type definitions
+i  ncurses-bin - terminal-related programs and man pages
+i  npm - package manager for Node.js
+i  openscad - script file based graphical CAD environment
+i  openshot-qt - create and edit videos and movies
+i  openspace - interactive 3D visualization of space and planetary data
+i  openssh-server - secure shell (SSH) server, for secure access from remote machines
+i  parted - disk partition manipulator
+i  pcp - System level performance monitoring and performance management
+i  python3-lxml - pythonic binding for the libxml2 and libxslt libraries
+i  python3-pip - Python package installer
+i  python3-virtualenv - Python virtual environment creator
+i  qgis - Geographic Information System (GIS)
+i  qgis-plugin-grass - GRASS plugin for QGIS
+i  qt6-base-dev - Qt 6 base development files
+i  shim-signed - Secure Boot chain-loading bootloader (Microsoft-signed binary)
+i  sl - Correct you if you type `sl' by mistake
+i  sqlite3 - Command line interface for SQLite 3
+i  tree - displays an indented directory tree, in color
+i  unmined-gui-sc - Minecraft mapper
+i  va-driver-all - Video Acceleration (VA) API -- driver metapackage
+i  vim-gtk3 - Vi IMproved - enhanced vi editor - with GTK3 GUI
+i  watchman - File watching service
+i  whois - intelligent WHOIS client
+i  zenity - Display graphical dialog boxes from shell scripts
+i  zoom - Zoom Workplace
