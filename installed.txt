@@ -2,17 +2,26 @@
 #
 # I am not sure I can explain all of these, but I believe that they are as intended.
 #
+i  ant - Java based build tool like make
 i  antiword - Converts MS Word files to text, PS, PDF and XML
+i  apache2 - Apache HTTP Server
+i  apache2-dev - Apache HTTP Server (development headers)
 i  aptitude - terminal-based package manager
+i  at - Delayed job execution and batch processing
+i  autoconf - automatic configure script builder
 i  bash-completion - programmable completion for the bash shell
+i  bc - GNU bc arbitrary precision calculator language
 i  beep - advanced PC-speaker beeper
 i  blender - Very fast and versatile 3D modeller/renderer
 i  bsdutils - basic utilities from 4.4BSD-Lite
+i  bzip2 - high-quality block-sorting file compressor - utilities
 i  ca-certificates - Common CA certificates
 i  certbot - automatically configure HTTPS using Let's Encrypt
 i  chrome-gnome-shell - GNOME Shell integration for browsers - transitional package
 i  chromium-chromedriver - Transitional package - chromium-chromedriver -> chromium snap
 i  cmake - cross-platform, open-source make system
+i  cowsay - configurable talking cow
+i  cron - process scheduling daemon
 i  curl - command line tool for transferring data with URL syntax
 i  default-jdk - Standard Java or Java compatible Development Kit
 i  default-jre - Standard Java or Java compatible Runtime
@@ -34,9 +43,13 @@ i  grep - GNU grep, egrep and fgrep
 i  gzip - GNU compression utilities
 i  hexyl - Command-line hex viewer with colored output
 i  hostname - utility to set/show the host name or domain name
+i  htop - interactive processes viewer
+i  iftop - displays bandwidth usage information on an network interface
 i  isort - utility for sorting Python imports
+i  jq - lightweight and flexible command-line JSON processor
 i  kdenlive - non-linear video editor
 i  lynx - classic non-graphical (text-mode) web browser
+i  lz4 - Fast LZ compression algorithm library - tool
 i  m17n-db - multilingual text processing library - database
 i  make - utility for directing compilation
 i  maven - Java software project management and comprehension tool
@@ -69,5 +82,6 @@ i  va-driver-all - Video Acceleration (VA) API -- driver metapackage
 i  vim-gtk3 - Vi IMproved - enhanced vi editor - with GTK3 GUI
 i  watchman - File watching service
 i  whois - intelligent WHOIS client
+i  xxd - tool to make (or reverse) a hex dump
 i  zenity - Display graphical dialog boxes from shell scripts
 i  zoom - Zoom Workplace
